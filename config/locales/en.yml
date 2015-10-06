@@ -1,0 +1,93 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  healthengine: "HealthEngine"
+  healthengine_html: "<span class='health'>Health</span><span class='engine'>Engine</span>"
+  copyright_notice_html: "Copyright © %{year} Health Engine. All Rights Reserved.<br>Designated trademarks and brands are the property of their respective owners."
+  healthengine_claims_address: "HealthEngine Claims\nP.O. Box 1633\nChicago, IL 60690-1633"
+  jonathan-weiss:
+    bio-one: "Jonathan Weiss is a healthcare entrepreneur with experience in founding and operating various international medical companies. He currently leads HealthEngine, a platform bringing purchasers and providers together in a marketplace for healthcare services."
+    bio-two: "Jonathan has served as co-founder & CEO of several businesses including Nations Healthcare, one of the largest diagnostic and surgery centre companies contracted in the United Kingdom to build, staff and manage specialty hospitals diagnosing and treating 300,000 patients annually. Jonathan was also co-founder and director of Premier Health Partners, operating medical networks in the primary health and specialist physician fields throughout the UK and Europe."
+    bio-three: "Jonathan is a medical doctor and has also earned law, business, and economics/policy qualifications. He is a graduate of the University of Chicago's Pritzker School of Medicine and Booth School of Business, having completed both an MD and an MBA under Chicago's dual degree program. He was educated as a lawyer, receiving his BA degree from Oxford University, and additionally holds an MSc in Health Economics and Policy from Stanford University and a BA in Government from Harvard University."
+    bio-four: "In addition to his executive duties, Jonathan often acts as a director and consultant to international companies including Fortune 100 US insurers and medical management firms."
+    bio-five: ""
+  amitabh-chandra:
+    bio-one: "Professor Amitabh Chandra joined HealthEngine as one of the very first team members recruited onto the management team. An economist by background, Dr. Chandra is Professor of Public Policy, and Director of Health Policy Research at the Harvard Kennedy School of Government. He is a member of the Congressional Budget Office's (CBO) Panel of Health Advisors, and among his research areas are productivity and cost-growth in healthcare."
+    bio-two: "He has been published in the American Economic Review, the Journal of Political Economy, and the New England Journal of Medicine. He is an editor of the Review of Economics and Statistics, a former editor of the Journal of Human Resources, and serves on the editorial boards of Economics Letters and the American Economic Journal."
+    bio-three: "In 2011, Dr. Chandra served as Massachusetts's Special Commissioner on Provider Price Reform. In 2012, he was awarded American Society of Health Economists (ASHE) medal. The ASHE Medal is awarded biennially to the economist age 40 or under who has made the most significant contributions to the field of health economics."
+    bio-four: "Dr. Chandra earned his Bachelor's and Doctorate degrees from the University of Kentucky."
+    bio-five: ""
+  jack-stockert:
+    bio-one: "Jack Stockert is Senior Vice President of Strategy and Operations at HealthEngine. He is a trained physician with experience in healthcare innovation and early stage venture evaluation and execution. He brings leadership expertise in corporate development, finance and management."
+    bio-two: "Prior to joining HealthEngine, Jack served a variety of clients as a consultant at McKinsey and Company. His breadth of experience ranges from healthcare services (including providers and medical diagnostic testing companies), to public sector (both state and federal entities), as well as higher education. His functional experience crossed the strategy and operations practices where he developed core skills to evaluate post-reform markets, implement disease specific service line strategies, and define market based pricing and contracting. His public sector and education strategy work focused on analyzing market trends, identifying novel revenue development opportunities, and data analytics on productivity."
+    bio-three: "Prior to McKinsey, Jack spent time as Director of Sales and Marketing at Rubicon Genomics, a next generation sequencing sample amplification technology company. He additionally worked at Morgan Stanley doing healthcare and general investment banking. During his studies, Jack conducted clinical research on diabetes and hypertension at Abbott Laboratories, investigated healthcare informatics at the World Health Organization, and participated in a venture capital evaluation of biotechnologies at Argonne National Labs."
+    bio-four: "Jack received his AB from the University of Chicago with Honors in Biology and Immunology. He earned a joint MD and MBA from the University of Chicago Pritzker School of Medicine and the Booth School of Business. He trained in internal medicine at the University of Loyola Medical Center and is a licensed physician."
+    bio-five: ""
+  seth-merritt: 
+    bio-one: "Seth Merritt brings 15 years of progressive healthcare leadership experience, in addition to a background of working with large national insurers as well as regional network organizations. Seth has a strong track record delivering on cohesive partnerships and creative value networks, with a particular focus on innovative clinical delivery models."
+    bio-two: "With a fundamental dedication to clear and inclusive communication capabilities, Seth strives toward developing long-term collaborations across provider and payer stakeholders for the benefit of patients."
+    bio-three: "Prior to joining HealthEngine, Seth spent six years serving in various director positions with WellPoint/Anthem Blue Cross, where he was responsible for oversight of network development and leading on global vendor partnerships. From 2004 through to 2008, Seth served as both Director of Network Development and Director of Affiliate Networks for Interplan Health Group, a national healthcare management company. In these roles, he established and optimized the directly-contracted provider networks while coordinating and managing relationships with partner network organizations. Previously, Seth spent four years with COMP Medical Group, a regional ancillary network organization, which supports workers' compensation payers. During this time, he was in charge of all organizational network strategy, pricing development, and network management."
+    bio-four: "Seth studied Communications at the University of Arizona, and has earned Executive Certifications from the University of Notre Dame Mendoza College of Business, in both Advanced Negotiations and Conflict Management. He also has received certifications in both Six Sigma Design and Lean Process Improvement."
+    bio-five: ""
+  kevin-kotowski:
+    bio-one: "Kevin Kotowski has been building software products and platforms for over 20 years with a focus on high-volume consumer websites, software as a service, and big data architecture. Kevin brings leadership, focus, and drive to his technology teams and projects."
+    bio-two: "After beginning his career building ERP systems on SAP at Dow Chemical and system integration products at SSA, Kevin went to Cars.com where he developed a hybrid software development methodology. Using that approach and architecture, Kevin built high performing engineering teams for Classified Ventures, onewed.com, coupons.target.com, and spine-health.com."
+    bio-three: "More recently, Kevin designed, built, and integrated the digital omni- channel advertising platform for Catalina Marketing, a world leader in personalized digital media running the largest data warehouse of retail transactions in the world. Kevin went on to become the Enterprise Architect for Catalina where he guided the integration of an acquired point of sale mobile solution, the extension of personalization from coupons to online display ads, and the design of a fully automated personalized rewards solution for a prominent mass merchandise and grocery retailer."
+    bio-four: "Kevin earned his Bachelor of Business Administration degree from the University of Wisconsin at Madison."
+    bio-five: ""
+  alex-weiss: 
+    bio-one: "Alex Weiss joins HealthEngine as Senior Vice President of Business Development. After spending the last ten years in a client-facing role within finance, he brings to HealthEngine strong relationship management skills as well as effective leadership experience."
+    bio-two: "Most recently, Alex worked in the investment management division at Goldman Sachs, and has spent time at other investment banks, including UBS and Fox-Pitt Kelton. He is passionate about affordable healthcare and looks forward to helping HealthEngine clients attain it."
+    bio-three: "Alex has an MBA from the University of Chicago Booth School of Business with concentrations in finance and accounting, and his BA in Economics from the University of Chicago, where he was a letterman for the football team. He is on the Leaders' Council of the Special Olympics of Illinois, serves as a tutor and mentor with Cabrini Connections, and teaches a stock class to inner-city eighth graders for the Big Shoulders Fund."
+    bio-four: ""
+    bio-five: ""
+  casey-t-griffin:
+    bio-one: "Casey Griffin has spent the last 15 years managing the Cook County Recorder of Deeds office. As Deputy Recorder, he oversaw the operation of this large government office with 200 employees and annual revenues of over 75 million dollars a year."
+    bio-two: "During that time, he revolutionized the office by executing the conversion of over eight million documents to digitized images, researched and implemented new technology which improved document filing time by 700%, and fully automated online document recordation, reducing operational costs for 13 straight years. Casey has substantial experience in complex governmental management, employment and policies, and complete familiarity with budgetary processes within Cook County for major governmental offices."
+    bio-three: "Prior to his position with Cook County, Casey established and managed a successful commercial/industrial insulation firm. Through industry innovation, grassroots marketing and cultivation of strong relationships, he was able to grow the business into a multimillion dollar company."
+    bio-four: "Casey’s diverse experience is rounded out by his work with the Chicago building trades. In fact, he began his career with Heat and Frost Insulators Local 17, and his 33 year membership has never lapsed. He has also held office as an elected official, giving him unique expertise in local and municipal government."
+    bio-five: "Finally, Casey has an enduring sense of community service, with a profound recognition of the importance of being a positive role model. He has coached high school football and wrestling for most of his life, and he has been an active supporter and benefactor of several local youth programs."
+  chad-a-leat:
+    name: "Chad A. Leat"
+    bio-one: "Chad Leat, retired Vice Chairman of Global Banking at Citigroup, has nearly thirty years of markets and banking experience on Wall Street. He is an acknowledged leader and innovator in corporate credit and M&A finance having completed some of the largest acquisition financings ever done."
+    bio-two: "Over the years Mr. Leat has built and led numerous successful and profitable businesses at Citigroup, JPMorgan Chase and their predecessor companies. From 2009 through 2013, he was one of Citigroup's most senior investment bankers, serving as Chairman of the Global Financial Sponsors Group. Some of his closest relationships have been with firms such as Apollo, Blackstone, The Carlyle Group, Cerberus, KKR, Permira, TH Lee and TPG Capital, to name a few."
+    bio-three: ""
+  drdavid-h-song:
+    name: "Dr. David H. Song"
+    bio-one: "Dr. David Song is Vice-Chairman of the Department of Surgery, and Chief of Plastic Surgery at the University of Chicago Medical Center. He is a fellow in the American College of Surgeons, past president of the Chicago Society of Plastic Surgeons, and is also a past board member of the American Society of Plastic Surgeons (ASPS) and the Association of Academic Chairmen of Plastic Surgery (AACPS)."
+    bio-two: "Dr. Song received an MBA from the University of Chicago Booth School of Business, which further equips him to advance healthcare delivery, services design, and quality and outcomes."
+    bio-three: ""
+  stephen-c-savage:
+    name: "Stephen C. Savage"
+    bio-one: "Stephen Savage is senior vice president and chief information officer at CA, responsible for the company's global IT strategy, IT compliance, international IT organization and infrastructure. Additionally, he manages the implementation of a global ERP system and oversees the internal adoption and implementation of CA solutions based on the company's Enterprise IT Management (EITM) vision."
+    bio-two: "Mr. Savage has built his career primarily overseas in sales, consulting and operations. Prior to his current role, he was responsible for the business planning cycle and the significant corporate transformation that redefined the company's business processes. Mr. Savage has also been responsible for corporate strategy and SOX compliance and has held international roles within CA, which included running the Application Products Group in Europe as well as European professional services. Before joining CA, he was responsible for international operations of a consulting services company that was purchased by CA in 1998. Earlier in his career, Steve was general manager of Singer Sewing Machine Corporation."
+    bio-three: ""
+  les-funtleyder:
+    name: "Les Funtleyder"
+    bio-one: "Les Funtleyder has been actively involved in the healthcare industry for over 20 years both as a portfolio manager and analyst, and as an employee of major pharmaceutical companies."
+    bio-two: "He was formerly portfolio manager and health care strategist for the Miller Tabak Health Care Transformation Fund, which achieved top decile performance in the long/short category. Mr. Funtleyder wrote Healthcare Investing: Profiting from the New World of Pharma, Biotech, and Health Care Services (McGraw Hill), is widely quoted in the Wall Street Journal, the New York Times and is a frequent guest on CNBC, Bloomberg and NPR."
+    bio-three: "Mr. Funtleyder holds a Master of Public Heath (MPH) from Columbia University and a BA from Tulane University."
+  ramon-tisaire:
+    name: "Ramon Tisaire"
+    bio-one: "Ramon Tisaire is a co-founder of HealthEngine."
+    bio-two: "Ramon was formerly a Managing Director with Alvarez & Marsal (A&M) in Madrid where he led the local practice. In this position, he oversaw restructuring and performance improvement programs designed to maximize value for his clients. In addition, before joining A&M, he was a Managing Director of Capgemini in Barcelona, Spain."
+    bio-three: "Mr. Tisaire received a bachelor's degree, summa cum laude, from Hamilton College in Clinton, New York, as well as an MBA and a Master's degree in international relations from the University of Chicago. He received a \"Certificat d'Études Politiques,\" from the Institut d'Études Politiques in Paris."

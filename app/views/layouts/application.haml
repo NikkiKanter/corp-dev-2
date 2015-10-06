@@ -1,0 +1,16 @@
+!!! 5
+%html
+	= render 'layouts/html_head'
+	%body{"data-spy" => "scroll", "data-target" => "#myScrollspy"}
+		= render 'layouts/header'
+	.container-fluid.no-padding
+		.alert-fixed-top.alert-dismissible
+			- flash.each do |name, msg|
+				= content_tag :div, class: "container text-center flash alert alert-#{name}" do
+					%button.close{'data-dismiss' => 'alert'}
+						%i.fa.fa-times
+					%p
+						= raw(msg)
+		#main-content
+			= yield
+		= render 'layouts/footer'

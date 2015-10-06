@@ -1,0 +1,21 @@
+%section#features
+	.container
+		.row 
+			%ul.selector 
+				%li.active
+					.btn{'data-toggle' => 'tab', href: '#tab-1'}
+						Section 1
+				%li
+					.btn{'data-toggle' => 'tab', href: '#tab-2'} 
+						Section 2
+			.tab-content.col-md-10.col-md-offset-1
+				#tab-1.tab-pane.active.in.fade
+					%h3 Lorem ipsum dolor sit amet.
+					%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis quam eget dolor ultrices congue. Sed malesuada euismod euismod. Donec eu convallis nibh. Proin interdum lacinia cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					%a.learn{href: '#'} 
+						Learn More
+						%i.fa.fa-angle-double-right
+				#tab-2.tab-pane.fade
+					Some more content.
+				#tab-3.tab-pane.fade
+					and more more content.

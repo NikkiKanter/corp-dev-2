@@ -1,0 +1,11 @@
+%p.badges
+  - if @provider.claimed
+    = image_tag "badges/claimed.png", size: "45" , class:'info-popover-providers', :data=>{:container => "body", :content=>"This provider has been reviewed by HealthEngine medical board and has been endorsed for their specialty.", :placement => "bottom", :toggle => "popover"}
+  - if @provider.fellowship_specialty_id.present?
+    = image_tag "badges/fellowship.png", size: "45", class:'info-popover-providers', :data=>{:container => "body", :content=>"This provider has passed credentialing requirements or participated in a Fellowship program in one of the top 100 hospitals for their specialty.", :placement => "bottom", :toggle => "popover"}
+  - if @provider.certifications.present?
+    = image_tag "badges/certifications.png", size: "45", class:'info-popover-providers', :data=>{:container => "body", :content=>"This provider has been board certified in their specialty. Board Certification demonstrates a physician’s exceptional expertise in a particular specialty and/or subspecialty of medical practice.", :placement => "bottom", :toggle => "popover"}
+  - if @provider.try(:volume) || 0 > 3
+    = image_tag "badges/high-volume.png", size: "45", class:'info-popover-providers', :data=>{:container => "body", :content=>"This provider has performed a high volume of procedures in their specialty. For a number of procedures, surgeons who perform more procedures have better clinical outcomes and safety records than those who perform fewer procedures.", :placement => "bottom", :toggle => "popover"}
+  - if @provider.medical_school.present? and @provider.medical_school.rank.present?
+    = image_tag "badges/medical-school.png", size: "45", class:'info-popover-providers', :data=>{:container => "body", :content=>"This provider graduated from one of the top 100 medical schools according to US News and World Report rankings.", :placement => "bottom", :toggle => "popover"}

@@ -1,0 +1,357 @@
+#cdw
+	padding: 80px 15px
+	text-align: center
+	background: $white-smoke
+
+	img
+		width: 100%
+
+	h1
+		font-size: 2.25em
+		text-align: left
+
+	h2
+		font-size: 1.875em
+		text-align: left
+
+	h3
+		color: $cement
+		letter-spacing: 1px
+		position: relative
+		text-align: left
+
+		&.border-top
+			margin: 50px 0 0
+
+			&:after
+				display: none
+
+			&:before
+				content: ""
+				position: absolute
+				width: 0%
+				height: 1px
+				top: -25px
+				background: $border
+				width: 50%
+				left: 25%
+
+		&.no-border
+			&:after,
+			&:before
+				display: none
+
+	h4
+		color: $cement
+		letter-spacing: 1px
+		position: relative
+		text-align: left
+
+	h5
+		display: inline-block
+
+		a
+			font-size: 1em
+
+	p
+		color: $dark-gray
+		font-size: 1.25em
+		text-align: left
+
+	#faq
+		p
+			margin-bottom: 50px
+
+		a
+			text-align: left
+			float: left
+			color: #00acdc
+			font-size: 18px
+			text-decoration: underline
+
+			&:first-of-type
+				margin-right: 20px
+
+	ul
+		list-style: decimal inside
+		color: $dark-gray
+		font-size: 1.25em
+		text-align: left
+		margin-bottom: 50px
+
+		li
+			margin-bottom: 15px
+
+	.no-margin
+		margin: 0 !important
+
+	.btn-spacer
+		margin-right: 10px
+
+	.cards
+		display: table
+		table-layout: fixed
+
+		.card
+			font-size: .8em
+			display: table-cell
+			width: 30%
+			padding: 0px 20px 30px
+
+			strong
+				font-size: 1em
+
+			&.center
+				border-left: 1px solid $light-border
+				border-right: 1px solid $light-border
+				+linear-gradient($white-smoke, white, $white-smoke)
+
+
+.spacer-xs
+	height: 10px
+	display: block
+
+.spacer-sm
+	height: 20px
+	display: block
+
+.spacer-md
+	height: 30px
+	display: block
+
+.spacer-lg
+	height: 40px
+	display: block
+
+.spacer-xl
+	height: 50px
+	display: block
+
+.spacer-2xl
+	height: 60px
+	display: block
+
+.spacer-3xl
+	height: 70px
+	display: block
+
+.btn-lg
+	padding: 10px 24px
+	line-height: 1.6
+
+
+.btn
+	font-weight: 300
+	text-align: center
+	vertical-align: middle
+	border-radius: 40px
+	-moz-border-radius: 40px
+	-khtml-border-radius: 40px
+	-webkit-border-radius: 40px
+	display: inline-block
+	margin-bottom: 0
+	white-space: nowrap
+	user-select: none
+	touch-action: manipulation
+	cursor: pointer
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	-moz-transition: all .3s ease-in
+	-o-transition: all .3s ease-in
+	-webkit-transition: all .3s ease-in
+	transition: all .3s ease-in
+	-webkit-box-shadow: none
+	-moz-box-shadow: none
+	box-shadow: none
+
+	&:hover, &:active, &:focus, &:active:focus
+		text-decoration: none
+		outline: 0
+		-webkit-box-shadow: none
+		-moz-box-shadow: none
+		box-shadow: none
+
+	span
+		font-size: 1em
+
+
+.btn-blue
+	color: $white
+	background: $light-blue
+	border: 1px solid $light-blue
+
+	&:hover, &:focus, &:active, &:active:focus
+		color: $white
+		background: $dark-blue
+		border: 1px solid $dark-blue
+
+.btn-white
+	color: $light-blue
+	background-color: $white
+	border: 1px solid $light-blue
+
+	&:hover, &:active, &:focus, &:active:focus
+		background-color: $light-blue
+		color: $white
+		border: 1px solid $light-blue
+
+
+.no-padding
+	padding-left: 0 !important
+	padding-right: 0 !important
+
+.no-padding-left
+	padding-left: 0 !important
+
+.text-center
+	text-align: center !important
+
+
+#cdw-slider
+	height: 400px
+	overflow: hidden
+	position: relative
+	background: $light-blue
+
+	.hero-bg
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 10
+
+		&.physician
+			width: 100%
+			height: auto
+			top: -100px
+
+	h1
+		color: white
+		font-size: 3.5em
+		font-weight: 600
+		z-index: 20
+		position: relative
+		text-align: center
+		text-shadow: 0 2px 2px rgba(0,0,0,0.7)
+		width: 80%
+		padding: 120px 0 30px
+		margin: 0 auto
+
+.carousel
+	z-index: 1
+
+
+.carousel-inner
+	overflow: visible
+	-webkit-transform-style: preserve-3d
+
+.downloads
+	a.text-link
+		text-align: center
+		color: #00acdc
+		font-size: 18px
+		text-decoration: underline
+		margin-top: 15px
+
+		&:hover
+			color: $dark-blue
+
+	.webinar
+		h4
+			text-align: center !important
+
+.downloads.affix
+	top: 80px
+	width: 360px
+
+.downloads.affix-bottom
+	position: absolute
+	width: 360px
+
+.carousel-caption
+	h1
+		text-align: left
+		line-height: 1.5em
+		font-size: 3.5em
+
+.video-wrapper
+	position: relative
+	padding-bottom: 56.25%
+	padding-top: 0px
+	height: 0
+
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+.carousel-inner
+	-webkit-transform-style: preserve-3d
+
+@media screen and (max-width: 991px)
+	.downloads
+		top: inherit !important
+		width: 100% !important
+
+	.affix
+		position: relative
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+	.carousel-caption
+		left: 11%
+		right: 21%
+		padding-bottom: 110px
+
+		h1
+			font-size: 2.5em
+
+	.carousel-inner > .item > img
+		position: absolute
+		top: -310px
+		left: 85px
+
+@media screen and (max-width: 767px)
+	#cdw
+		padding: 15px
+
+	#cdw-slider
+		height: 320px
+		z-index: 1
+
+	.carousel-caption
+		left: 6%
+		right: 21%
+		padding-bottom: 50px
+
+		h1
+			font-size: 2em
+
+	.carousel-inner > .item > img
+		position: absolute
+		top: -270px
+		left: 20px
+
+	#cdw-slider, #myCarousel
+		display: none
+
+@media screen and (min-width: 992px) and (max-width: 1381px)
+	.carousel-inner
+		bottom: 30px
+
+	.carousel-inner > .item > img
+		position: absolute
+		top: -310px
+		left: 20%
+
+@media screen and (min-width: 1382px)
+	.carousel-inner
+		bottom: 60px
+
+	.carousel-inner > .item > img
+		position: absolute
+		top: -230px
+		left: 20%

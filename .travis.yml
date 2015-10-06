@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+rvm:
+  2.1.2
+env: API_KEY=traviskey HTTP_AUTH_USERNAME=admin HTTP_AUTH_PASSWORD=password SECRET_KEY_BASE=a50241dfbbsk149d9a0nalksadkldafjasi2fdsaadasdgbqbwkj33132t3g9933875hg388hdacvnmwqoe33235512ddfs05ffb422ae69c793a65a419bf4a7dd2af DEFAULT_ADMIN_EMAIL=test@example.com DEFAULT_ADMIN_PASSWORD=1234567890
+services:
+ - redis-server
+script:
+ - "bundle exec rspec spec"
+notifications:
+  hipchat: IpnRqlko5kMlRx6VFLANdQmuW8AOs18n20WhN83S@Build Status
+env: 
+  - API_BASE="http://api.healthengine.dev/api/v1"

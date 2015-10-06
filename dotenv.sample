@@ -1,0 +1,12 @@
+#
+# Local environment config vars
+#
+API_BASE=http://api.healthengine.dev/api/v1 
+PROVIDER_BASE=http://providers.healthengine.com
+SEARCH_BASE=http://search.healthengine.com
+GMAIL_USER=healthengine.testing@gmail.com
+GMAIL_PASSWORD=w.6fVd8eTYH;
+GA_KEY=UA-50621777-1
+SENDGRID_USER=healthengine
+SENDGRID_PASSWORD=Tvu3}FhE%6Dv
+SECRET_KEY_BASE=a50b1b03483021cccf7aac34b05060fa59980c3f0011c8b82046b3fb69f5d0de

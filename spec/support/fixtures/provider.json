@@ -1,0 +1,165 @@
+{
+  "internet_contact": {
+    "first_name": null,
+    "last_name": null,
+    "title": null,
+    "primary_phone": null,
+    "email": null,
+    "feedback_email": null,
+    "website_url": null,
+    "facebook_id": null,
+    "twitter_handle": null
+  },
+  "id": 1386649606,
+  "name": "Dr. Kevin K. Hunger, MD",
+  "npi_code": 1386649606,
+  "practice_name": null,
+  "bio": null,
+  "slogan": null,
+  "address": {
+    "street1": "2 Shircliff Way",
+    "street2": "Ste 800",
+    "street3": null,
+    "city": "Jacksonville",
+    "state": "FL",
+    "zip_code": "32204",
+    "zip4": "4751",
+    "latitude": "30.457291",
+    "longitude": "-84.259293",
+    "map_latitude": "30.4556624009",
+    "map_longitude": "-84.2597650687",
+    "map_zoom": 14,
+    "driving_directions": null
+  },
+  "address_string": "2 Shircliff Way Ste 800 Jacksonville, FL",
+  "primary_contact": {
+    "first_name": "Kevin",
+    "last_name": "Hunger",
+    "title": "Dr.",
+    "primary_phone": "9043882619",
+    "email": null,
+    "feedback_email": null,
+    "website_url": null,
+    "facebook_id": null,
+    "twitter_handle": null
+  },
+  "headshot": {
+    "original": "http://api.healthengine.com/images/headshot/original/missing.png",
+    "thumb": "http://api.healthengine.com/assets/headshot/thumb/missing-24bbfa3bd7aa0da2b83dcffaf3e230bf.png",
+    "crop_x": null,
+    "crop_y": null,
+    "crop_h": null,
+    "crop_w": null,
+    "id": null
+  },
+  "exterior": {
+    "original": "http://api.healthengine.com/images/exterior/original/missing.png",
+    "thumb": "http://api.healthengine.com/assets/exterior/thumb/missing-4142ea90573e89fbc46921610c9a6504.png",
+    "crop_x": null,
+    "crop_y": null,
+    "crop_h": null,
+    "crop_w": null,
+    "id": null
+  },
+  "residency_facility": {
+    "name": null,
+    "id": null
+  },
+  "residency_facility_id": null,
+  "scheduling_contact": {
+    "first_name": null,
+    "last_name": null,
+    "title": null,
+    "primary_phone": null,
+    "email": null,
+    "feedback_email": null,
+    "website_url": null,
+    "facebook_id": null,
+    "twitter_handle": null
+  },
+  "individual": true,
+  "claimed": false,
+  "addresses": [
+    {
+      "id": 1386649606,
+      "street1": "2 Shircliff Way",
+      "street2": "Ste 800",
+      "street3": null,
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip_code": "32204",
+      "zip4": "4751",
+      "string": "2 Shircliff Way Ste 800 Jacksonville, FL",
+      "latitude": "30.457291",
+      "longitude": "-84.259293",
+      "map_latitude": "30.4556624009",
+      "map_longitude": "-84.2597650687",
+      "map_zoom": 14,
+      "driving_directions": null
+    }
+  ],
+  "office_hours": {
+    "always_open": false,
+    "hours": {
+      "sun": {
+        "open": "",
+        "close": ""
+      },
+      "mon": {
+        "open": "",
+        "close": ""
+      },
+      "tue": {
+        "open": "",
+        "close": ""
+      },
+      "wed": {
+        "open": "",
+        "close": ""
+      },
+      "thu": {
+        "open": "",
+        "close": ""
+      },
+      "fri": {
+        "open": "",
+        "close": ""
+      },
+      "sat": {
+        "open": "",
+        "close": ""
+      }
+    }
+  },
+  "facility_ids": [],
+  "facilities": [],
+  "medical_groups": [],
+  "medical_group_ids": [],
+  "hospitals": [],
+  "hospital_ids": [],
+  "medical_school": null,
+  "medical_school_graduation": null,
+  "first_year_practice": null,
+  "fellowship_facility": {
+    "name": null,
+    "id": null
+  },
+  "fellowship_facility_id": null,
+  "fellowship_specialty_id": null,
+  "specialty_ids": [
+    507
+  ],
+  "licenses": [
+    {
+      "state": "",
+      "exp_date": ""
+    }
+  ],
+  "parent": {
+    "name": null,
+    "id": null
+  },
+  "completeness": 24,
+  "certifications": [],
+  "certification_ids": []
+}

@@ -1,0 +1,23 @@
+%header
+	.container
+		.row
+			.col-md-2
+				%a.btn.menu-toggle{'data-toggle' => 'collapse', href: '#header-menu'}
+					%i.fa.fa-bars
+				.logo
+					= link_to root_path do
+						= image_tag 'logo.png', class:'he-logo'
+			.col-md-10
+				%ul#header-menu.collapse.fade
+					%li
+						= link_to 'Patients', root_path, class: "text #{'active' if current_page?(root_path)}"
+					%li
+						= link_to 'Physicians', physicians_path, class: "text #{'active' if current_page?(physicians_path)}"
+					%li
+						= link_to 'About', about_path, class: "text #{'active' if current_page?(about_path)}"
+					%li
+						= link_to 'Contact Us', contact_path, class: "text #{'active' if current_page?(contact_path)}"
+					%li
+						= link_to 'Log In', 'https://app.healthengine.com/users/sign_in', class: 'btn'
+					-# %li
+					-# 	= link_to 'Register', 'https://app.healthengine.com/register', class: 'btn btn-solid'

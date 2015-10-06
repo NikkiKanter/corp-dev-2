@@ -1,0 +1,7 @@
+= form_for(:marketing_contact, url: marketing_contacts_url, html: {remote: true, class: 'email-form form-inline', id: 'new_contact'}) do |form|
+  = form.fields_for :contact_attributes do |contact_form|
+    .form-group
+      = contact_form.text_field :email, id: 'contact_email', class: 'form-control empty', placeholder: "johnsmith@example.com", required: true
+      %small Subscribe now to access our leading prices and portal
+  = form.hidden_field :marketing_contact_type, value: 'corp'
+  = form.submit 'Notify me', class: 'btn btn-primary', data: { disable_with: "Submitting..."}

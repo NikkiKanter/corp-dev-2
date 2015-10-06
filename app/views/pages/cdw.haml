@@ -1,0 +1,145 @@
+%section#cdw-slider
+#myCarousel.carousel.slide{"data-ride" => "carousel"}
+	%ol.carousel-indicators
+		%li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "4", "data-target" => "#myCarousel"}
+		-# %li{"data-slide-to" => "5", "data-target" => "#myCarousel"}
+	.carousel-inner{:role => "listbox"}
+		.item.active
+			= image_tag 'hm1.svg', class: 'slide', alt: 'Health Mystery #1'
+			.container
+				.carousel-caption
+					%h1 Did you know a higher price doesn’t equal higher quality in healthcare?
+		.item
+			= image_tag 'hm2.svg', class: 'slide', alt: 'Health Mystery #2'
+			.container
+				.carousel-caption
+					%h1 Ready to save up to 60% on your out-of-pocket healthcare costs?
+		.item
+			= image_tag 'hm3.svg', class: 'slide', alt: 'Health Mystery #3'
+			.container
+				.carousel-caption
+					%h1 Think you can’t get high quality healthcare at a lower cost? Think again!
+		.item
+			= image_tag 'hm4.svg', class: 'slide', alt: 'Health Mystery #4'
+			.container
+				.carousel-caption
+					%h1 Did you know that costs vary by as much as 600% on the same medical service?
+		.item
+			= image_tag 'hm5.svg', class: 'slide', alt: 'Health Mystery #5'
+			.container
+				.carousel-caption
+					%h1 Are you ready to be a savvy healthcare consumer?
+		-# .item
+		-# 	= image_tag 'hm6.svg', class: 'slide', alt: 'Health Mystery #6'
+		-# 	.container
+		-# 		.carousel-caption
+		-# 			%h1 Would you buy something without knowing the price? You do with healthcare.
+
+%section#cdw
+	.container
+		.row
+			.col-md-8
+				%h1 Get Started With HealthEngine
+				.video-wrapper
+					%iframe{:allowfullscreen => "", :frameborder => "0", :width => "750", :height => "422", :src => "https://www.youtube.com/embed/Fw2LQ_5t91s?rel=0&wmode=transparent"}
+				.spacer-xl
+				.col-md-12.no-padding
+					.col-md-6.video-sm
+						%h4 New Activation Link
+						.video-wrapper
+							%iframe{:allowfullscreen => "", :frameborder => "0", :width => "750", :height => "422", :src => "https://www.youtube.com/embed/m1eOa7fgNrg?rel=0&wmode=transparent"}
+					.col-xs-12.visible-xs-block
+						.clearfix.spacer-lg
+					.col-md-6.video-sm
+						%h4 Forgot Password
+						.video-wrapper
+							%iframe{:allowfullscreen => "", :frameborder => "0", :width => "750", :height => "422", :src => "https://www.youtube.com/embed/kLwtp74BvU4?rel=0&wmode=transparent"}
+				.col-xs-12.visible-xs-block
+					.clearfix.spacer-lg
+				.clearfix
+				.spacer-xl
+
+				#brochure
+					%h1 User Brochure
+					= image_tag 'cdw-brochure.png', alt: 'CDW Corporate Brochure'
+					.spacer-md
+					-# %a{:href => "cdw/cdw_brochure.html", :target => "_blank"}
+					-# 	%button.btn.btn-lg.btn-blue.btn-spacer View
+					= link_to asset_path("HealthEngine_User_Brochure.pdf"), target: "_blank" do
+						%button.btn.btn-lg.btn-blue.btn-spacer Download
+
+				.clearfix
+				.spacer-xl
+				#faq
+					%h1 Most Frequently Asked Questions
+					= link_to asset_path("HealthEngine_FAQs_CDW.pdf") do
+						Download our full FAQs
+					= link_to asset_path("HealthEngine_FAQs_CDW.pdf") do
+						Read full FAQs online
+					.clearfix
+					%h2 Who is HealthEngine?
+					%p HealthEngine provides a technology platform that empowers consumers to save between 20-60% on healthcare services and gives physicians the ability to communicate their value to potential patients in terms of education, experience and other unique factors. When utilizing HealthEngine, consumers are finally able to shop for healthcare in the same way they shop for virtually everything else that matters to them.
+
+					%h2 Why is CDW offering HealthEngine?
+					%p CDW is offering HealthEngine so that you have a tool to get maximum value from your existing health insurance plan. The ultimate goal is for you to get great healthcare at a lower price.
+
+					%h2 Why would I want to use HealthEngine?
+					%p.no-margin HealthEngine is available to help you find the healthcare procedures, providers and specialists you need.  HealthEngine offers value in several ways:
+					%ul
+						%li	Provider Search: It allows you to easily search for nearby healthcare providers that perform the procedure you need.  HealthEngine provides information, when available, to help you evaluate healthcare providers, such as their educational background, training and procedure volume.
+						%li	Estimated Pricing Guide: HealthEngine provides estimated prices across providers for many common procedures so you can make an informed choice.
+						%li	The Care Concierge team that will save you time by scheduling appointments for you and managing all of the other details related to your procedure.
+
+					%h2 How does HealthEngine save us money?
+					%p HealthEngine’s platform shows you the variety of prices available for nearly 200 common medical procedures across 1.2 million providers. You may be surprised to know that prices can vary by 200% to 600% for the same service. With this information you’re able to decide which provider to see and what price to pay.
+
+					%h2 How does HealthEngine help me learn more about healthcare providers?
+					%p HealthEngine provides information on each healthcare provider and facility in its database.  When you click on the name of physicians in the database, you will see information including the physician’s location, specialty, academic degrees and training (when available).
+
+					%h2 How much does HealthEngine cost?
+					%p HealthEngine is available at no cost to both you and CDW.
+
+					%h2 Does HealthEngine comply with the HIPAA privacy standards?
+					%p Yes - the HealthEngine platform is HIPAA compliant.
+
+					%h2 Does HealthEngine choose healthcare providers for me?
+					%p No. HealthEngine is a resource for you to use in making your own healthcare decisions. HealthEngine will not recommend or choose any healthcare providers or procedures for you.
+
+					%h2 How do I access HealthEngine?
+					%p First you will need to activate your account using the personalized activation link that HealthEngine emailed you. If you didn’t receive an email, visit healthengine.com/CDW and click on the “Get new activation link” link.  Once your account has been activated, you can find the site at healthengine.com/CDW or by calling our Care Concierge team at 877.772.5595.
+
+
+			.col-xs-12.col-sm-12.col-md-4#myScrollspy
+				.downloads{"data-offset-top" => "470", "data-spy" => "affix", "data-offset-bottom" => "200"}
+					.col-md-12
+						%h3.text-center Quick Links
+						%a{:href => "https://app.healthengine.com/users/sign_in", :target => "_blank"}
+							%button.btn.btn-lg.btn-blue Log In Now
+						.clearfix.spacer-sm
+						%a.text-link{:href => "https://app.healthengine.com/users/password/new", :target => "_blank"}
+							Forgot your password?
+						.clearfix.spacer-sm
+						%a.text-link{:href => "https://app.healthengine.com/users/confirmation/new", :target => "_blank"}
+							Get New Activation Link
+						.spacer-sm
+					.col-md-12
+						%h3.text-center Webinar Registration
+						.webinar
+							%h4 HealthEngine Overview Webinar
+							%h5 Oct 14, 2015 - 1:00 PM CDT -
+							%h5
+								%a.text-link{:href => "https://attendee.gotowebinar.com/register/7302432133926693378", :target => "_blank"} Register
+						.spacer-sm
+						.webinar
+							%h4 HealthEngine Demo Webinar
+							%h5 Sep 30, 2015 - 12:00 PM CDT -
+							%h5
+								%a.text-link{:href => "https://attendee.gotowebinar.com/register/2616288287534227714", :target => "_blank"} Register
+
+							%h5 Oct 29, 2015 - 11:00 AM CDT -
+							%h5
+								%a.text-link{:href => "https://attendee.gotowebinar.com/register/547387835126790658", :target => "_blank"} Register

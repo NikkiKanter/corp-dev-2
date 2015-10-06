@@ -1,0 +1,107 @@
+header
+	background: white
+	padding: 15px 0
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	z-index: 20
+	box-shadow: rgba(0,0,0,0.05) 0 2px
+
+
+	.logo
+		height: 40px
+
+		img
+			height: 40px
+			vertical-align: top
+
+	.menu-toggle
+		float: right
+		display: block
+
+	a.btn
+		color: $slate
+		border: 1px solid $slate
+		border-radius: 5px
+		vertical-align: top
+		height: 34px
+		line-height: 32px
+		padding: 0 12px
+		margin-top: 3px
+		font-size: 1em
+
+		&:hover
+			background: $white-smoke
+
+	a.btn-solid
+		color: white
+		background: $slate
+		border: 1px solid $slate
+		border-radius: 5px
+		vertical-align: top
+		height: 34px
+		line-height: 32px
+		padding: 0 12px
+		margin-top: 3px
+		font-size: 1em
+
+		&:hover
+			background: $white-smoke
+
+	#header-menu
+		text-align: center
+		border-top: 1px solid $border
+		margin-top: 15px
+
+		li
+			display: block
+			height: 40px
+			line-height: 40px
+			font-size: 1.2em
+			letter-spacing: 1px
+			text-transform: uppercase
+
+			a.text
+				color: $slate
+				position: relative
+
+				&:after
+					content: ""
+					position: absolute
+					width: 0%
+					height: 1px
+					bottom: -2px
+					left: 50%
+					background: $slate
+					opacity: 0
+					transition: all 200ms ease 0ms
+					display: none
+
+				&.active:after,
+				&:hover:after
+					width: 90%
+					left: 5%
+					opacity: 0.8
+
++breakpoint(md)
+	header
+		.menu-toggle
+			display: none
+
+		#header-menu
+			display: block !important
+			height: auto !important
+			opacity: 1
+			text-align: right
+			border: none
+			margin: 0
+
+			li
+				display: inline-block
+				height: 40px
+				line-height: 40px
+				margin-left: 35px
+
+				a.text:after
+					display: block

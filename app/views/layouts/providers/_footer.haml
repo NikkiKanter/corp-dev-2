@@ -1,0 +1,22 @@
+%footer#footer
+  .container
+    .row
+      .col-sm-12
+        %p #{t(:copyright_notice_html, year: Time.now.year)} 
+        %br
+        %span
+          = link_to 'Privacy Policy', privacy_path
+          |
+        %span
+          = link_to 'Terms of Use', terms_path
+        %br
+        %span
+          %i.fa.fa-phone
+          (312) 595-9240
+          |
+        %span
+          %i.fa.fa-map-marker
+          116 W Hubbard St, Suite 7S
+          Chicago, IL 60654
+
+= render 'layouts/google_analytics'

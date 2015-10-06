@@ -1,0 +1,35 @@
+%footer
+	.container
+		.row
+			.col-md-6
+				%ul.menu.left
+					%li
+						= link_to 'About', about_path
+					%li
+						= link_to 'Privacy', privacy_path
+					%li
+						= link_to 'Terms', terms_path
+					%li
+						= link_to 'Contact Us', contact_path
+			.col-md-6
+				%ul.menu.right
+					%li
+						= link_to 'https://twitter.com/healthengineus', target: '_blank' do
+							%i.fa.fa-twitter
+						= link_to 'https://www.facebook.com/healthengineus', target: '_blank' do
+							%i.fa.fa-facebook
+						= link_to 'https://www.linkedin.com/company/healthengine-com', target: '_blank' do
+							%i.fa.fa-linkedin
+
+	.container
+		%hr
+		%span.info
+			%i.fa.fa-phone
+			(312) 595-9240
+			%i.fa.fa-map-marker
+			400 N Michigan Ave, Suite 450 Chicago, IL 60611
+		%span.info
+			Copyright © 2015 HealthEngine. All Rights Reserved. Designated trademarks and brands are the property of their respective owners.
+
+
+= render 'layouts/google_analytics'

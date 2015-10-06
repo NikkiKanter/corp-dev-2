@@ -1,0 +1,95 @@
+#home
+	height: auto
+	overflow: hidden
+	position: relative
+	background: $white-smoke
+	margin-bottom: 60px
+
+	img.mock
+		width: 560px
+		padding-top: 60px
+
+	a
+		display: inherit
+
+	p
+		font-size: 1.25em
+
+	.hero-bg
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 10
+
+		&.physician
+			width: 100%
+			height: auto
+			top: -100px
+
+	h1
+		color: $dark-blue
+		font-size: 3.5em
+		font-weight: 600
+		z-index: 20
+		position: relative
+		text-align: center
+		text-shadow: none
+		width: 80%
+		padding: 90px 0 30px
+		margin: 0 auto
+
+	#three-step
+		margin: 60px 0
+
+		h2, p
+			text-align: center
+
+		h2
+			color: $light-blue
+
++breakpoint(xs)
+	#hero
+		.hero-bg.physician
+			width: auto
+			height: 100%
+			top: 0
+
++breakpoint(md)
+	#hero
+		h1
+			font-size: 5em
+
+		h3
+			font-size: 1.8em
+
+*, *:before, *:after
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+
+.circle
+	position: relative
+	height: 100px
+	width: 100px
+	background-color: transparent
+	border-radius: 100px
+	border: 5px solid $medium-gray
+	margin: 0 auto
+
+	.number-lg
+		color: $medium-gray
+		font-size: 4em
+		width: 90px
+		text-align: center
+		margin-top: 2px
+
+
+@media screen and (max-width: 767px)
+	#home
+		h1
+			padding: 40px 0 20px
+
+		img.mock
+			width: 100%

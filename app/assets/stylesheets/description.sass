@@ -1,0 +1,78 @@
+#description
+	padding: 80px 15px
+	text-align: center
+	background: $white-smoke
+
+	h3 
+		color: $cement
+		letter-spacing: 1px
+		position: relative
+		margin: 0 0 50px
+
+		&:after
+			content: ""
+			position: absolute
+			width: 0%
+			height: 1px
+			bottom: -25px
+			background: $border
+			width: 50%
+			left: 25%
+
+		&.border-top
+			margin: 50px 0 0
+			
+			&:after 
+				display: none
+
+			&:before
+				content: ""
+				position: absolute
+				width: 0%
+				height: 1px
+				top: -25px
+				background: $border
+				width: 50%
+				left: 25%
+
+		&.no-border
+			&:after, 
+			&:before
+				display: none
+
+	p 
+		color: $slate
+		font-size: 1.7em
+
+	.cards
+		display: table
+		table-layout: fixed
+ 
+		.card
+			font-size: .8em
+			display: table-cell
+			width: 30%
+			padding: 0px 20px 30px
+ 
+			strong 
+				font-size: 1em
+
+			&.center
+				border-left: 1px solid $light-border
+				border-right: 1px solid $light-border
+				+linear-gradient($white-smoke, white, $white-smoke)
+
++breakpoint(xs)
+	#description
+		.cards
+			display: block
+
+			.card 
+				display: block
+				width: auto
+
+				&.center 
+					border: none
+					background: none
+					border-top: 1px solid $light-border
+					border-bottom: 1px solid $light-border

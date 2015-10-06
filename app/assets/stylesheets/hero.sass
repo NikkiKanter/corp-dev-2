@@ -1,0 +1,55 @@
+#hero
+	height: 400px
+	overflow: hidden
+	position: relative
+	background: $white-smoke
+
+	.hero-bg
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 10
+
+		&.physician
+			width: 100%
+			height: auto
+			top: -100px
+
+	h1
+		color: white
+		font-size: 3.5em
+		font-weight: 600
+		z-index: 20
+		position: relative
+		text-align: center
+		text-shadow: 0 2px 2px rgba(0,0,0,0.7)
+		width: 80%
+		padding: 120px 0 30px
+		margin: 0 auto
+
+	h3
+		color: white
+		font-size: 1.4em
+		z-index: 20
+		position: relative
+		text-align: center
+		width: 80%
+		margin: 0 auto 30px
+		text-shadow: 0 2px 2px rgba(0,0,0,0.7)
+
++breakpoint(xs)
+	#hero
+		.hero-bg.physician
+			width: auto
+			height: 100%
+			top: 0
+
++breakpoint(md)
+	#hero
+		h1
+			font-size: 5em
+
+		h3
+			font-size: 1.8em

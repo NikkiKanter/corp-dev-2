@@ -1,0 +1,31 @@
+!!! 5
+%html
+  = render 'layouts/providers/head'  
+  %body.admin{class: body_class}
+    %nav.navbar.navbar-default
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-toggle" => "collapse", "data-target" => '#primary-nav'}
+            - 3.times do
+              %span.icon-bar
+          %a.navbar-brand.healthengine-logo{href: '#'}
+            =t(:healthengine_html)
+            =sprite_tag "navbar-logo"
+
+        / - if user_signed_in?
+        .collapse.navbar-collapse#primary-nav
+          %ul.nav.navbar-nav.navbar-right
+            %li.profile
+              =link_to 'My Account', '#'
+            %li.logout
+              =link_to 'Sign Out', '#', method: :delete
+            / - if searchable?
+            %li
+              %form.navbar-form.search-form{action: "#"}
+                .form-group
+                  %span.glyphicon.glyphicon-search
+                  %input.form-control{name: 'query', placeholder: "Search #{controller_name.titleize}", value: params[:query].to_s.strip}
+    #wrap
+      #main-content
+        = yield
+    = render 'layouts/providers/footer'

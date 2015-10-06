@@ -1,0 +1,154 @@
+%section#provider
+  %div{class: "#{resolve_container}"}
+    .row.provider-main
+      .col-sm-7.clearfix
+        .provider-image
+          - if @provider.individual
+            - unless default_image(@provider.headshot.thumb)
+              = image_tag @provider.headshot.thumb, class: 'img-circle img-responsive', size: '80'
+          - else
+            - unless default_image(@provider.exterior.thumb)
+              = image_tag @provider.exterior.thumb, class: 'img-circle img-responsive', size: '80'
+
+        .provider-info
+          - primary_contact = @provider.primary_contact || Contact.new
+          %h2
+            = @provider.name
+          -if @provider.internet_contact.try(:website_url)
+            %a.provider-website{:href => "http://#{@provider.internet_contact.website_url}"}
+              = "#{@provider.internet_contact.website_url}"
+          
+          %p
+            %i.fa.fa-map-marker
+              #{@provider.address.city}, #{@provider.address.state} &#8226;
+            %a{href: "tel:#{primary_contact.primary_phone}", class: 'fa fa-phone'}
+              = number_to_phone(primary_contact.primary_phone, delimiter: ".")
+              
+            - if @provider.primary_contact.email.present?
+              &#8226;
+              %i.fa.fa-envelope-o
+                = primary_contact.email 
+
+          - internet_contact = @provider.internet_contact || Contact.new
+          %ul.social-share
+            -if internet_contact.facebook_id.present?
+              %li
+                %a{:href => "http://#{@provider.internet_contact.facebook_id}"}
+                  %i.fa.fa-facebook
+            -if internet_contact.twitter_handle.present?
+              %li
+                %a{:href => "http://twitter.com/#{@provider.internet_contact.twitter_handle}"}
+                  %i.fa.fa-twitter
+            -if internet_contact.feedback_email.present?
+              %li
+                %a{:href => "mailto:#{@provider.internet_contact.feedback_email}"}
+                  %i.fa.fa-envelope-o
+
+          
+          - unless @provider.claimed
+            = link_to "Claim my NPI", "#{ENV['PROVIDER_BASE']}/claim/#{@provider.npi_code}", class: 'btn btn-primary large', "target" => "_blank"
+
+      .col-sm-5.specialties
+        = render 'badges'
+        %p Specialites:
+        %ul.specialities-list
+          - @provider.specialties.each do |s|
+            %li= "#{s.classification}: #{s.specialization}"
+
+- unless @provider.bio.nil? and @provider.slogan.nil?
+  %section#provider-bio
+    %div{class: "#{resolve_container}"}
+      .row.provider-content
+        - if @provider.bio
+          .col-md-7.provider-bio
+            %p= @provider.bio
+
+        .col-md-5
+          - if @provider.slogan
+            %p.provider-slogan
+              %i.fa.fa-quote-left
+                = @provider.slogan
+                %i.fa.fa-quote-right
+
+%section#credentials
+  %div{class: "#{resolve_container}"}
+    .row.provider-credentials-row
+      %ul.provider-credentials
+        - unless @provider.has_training?
+          %li.col-sm-4.training
+            -if @provider.medical_school.present? && @provider.medical_school_graduation.present?
+              %h3 Medical School
+              %p= "#{@provider.medical_school.name} (#{@provider.medical_school_graduation})"
+
+            -if @provider.residency_facility.name.present?
+              %h3 Residency
+              %p= link_to @provider.residency_facility.name, provider_path(@provider.residency_facility)
+
+            -if @provider.fellowship_facility.name.present?
+              %h3 Fellowship
+              %p= link_to @provider.fellowship_facility.name, provider_path(@provider.fellowship_facility)
+
+            -if @provider.fellowship_specialty_id.present?
+              %h3 Fellowship Type
+              %p= "#{@provider.fellowship_specialty.classification}: #{@provider.fellowship_specialty.specialization}"
+        %li.col-sm-4.affiliations
+          - if @provider.facilities.present?
+            %h3 Affiliations
+            - @provider.facilities.each do |f|
+              %p= link_to f.name, provider_path(f.id)
+
+          %h3 NPI Number
+          = @provider.npi_code
+
+        %li.col-sm-4.certifications
+          - if @provider.licenses.first.state.present?
+            %h3 Licenses
+            -@provider.licenses.each do |l|
+              %p= "#{l.state} (#{l.exp_date})"
+%section
+  %div{class: "#{resolve_container}"}
+    - @provider.addresses.each_with_index do |address , index|
+      .row
+        %ul.direction-and-contacts
+          .col-sm-6
+            %div{id: "map-address#{index}", class: "map-square"}(data-map="{\"latitude\": #{address.map_latitude}, \"longitude\": #{address.map_longitude}, \"map_zoom\": #{address.map_zoom}}" data-marker="{\"latitude\": #{address.latitude}, \"longitude\": #{address.longitude}}")
+            :coffeescript
+              mapData = $("#map-address#{index}").data("map")
+              markerData = $("#map-address#{index}").data("marker")
+              $ -> Map.render('#map-address#{index}', mapData, markerData)
+            %p.driving-directions
+              = @provider.address.driving_directions
+
+          .col-sm-6
+            %div{:itemscope => "", :itemtype => "http://data-vocabulary.org/Organization"}
+              %h3 Address
+              %p{:itemprop => "address", :itemscope => "", :itemtype => "http://data-vocabulary.org/Address"}
+                %span{:itemprop => "street-address"}
+                  = address.street1
+                  = address.street2
+                  = address.street3
+
+                %br
+                %span{:itemprop => "locality"}
+                  = address.city
+                %span{:itemprop => "region"}
+                  = address.state
+                %span{:itemprop=> "postal-code"}
+                  = address.zip_code
+                  = address.zip4
+
+            - if @office_hours.present?
+              %h3 Office Hours
+              %ul.office-hours
+                - if @provider.office_hours.always_open == 'on'
+                  %li Always Open
+                  - @office_hours.each do |hours|
+                    %li
+                      %span= "#{hours[:day]}:"
+                      24 hrs
+                - else
+                  - @office_hours.each do |hours|
+                    - if hours[:open].present? || hours[:close].present?
+                      %li
+                        %span= "#{hours[:day]}:"
+                        = "#{standardize_time(hours[:open])} - #{standardize_time(hours[:close])}" 
